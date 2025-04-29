@@ -1,3 +1,4 @@
+<img src="images/functional.png"align=/>
 <img src="images/javascript.png" width="120px" align="right"/>
 
 # 🙉 Functional Programming in Javascript.
