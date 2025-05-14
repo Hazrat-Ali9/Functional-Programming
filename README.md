@@ -71,7 +71,66 @@ console.log(sum) // 15
 Let us move to the next functional programming method which is going to be a map.
 
 
+## 2. map In JavaScript, a Map is a built-in object that stores key-value pairs, similar to a dictionary in other programming languages. However, unlike objects where keys are implicitly strings, Map allows keys of any data type, including objects and functions. Map objects maintain the insertion order of elements.
 
+We use the map method whenever we like to modify an array. We use the map method only with arrays and it always returns an array.
+
+```js
+// syntax in a normal or a function declaration
+
+function callback(item, i) {
+return // code goes here
+}
+
+const modifiedArray = array.map(callback)
+
+// or syntax in an arrow function
+
+const callback = (item, i) => {
+return // code goes here
+}
+const modifiedArray = array.map(callback)
+```
+
+Now, let us modify the countries array using the map method. The index is an optional parameter
+
+```js
+// Using function declaration
+
+const countries = ['Germany', 'America', 'Russia', 'France']
+
+const newCountries = countries.map(function(country) {
+return country.toUpperCase()
+})
+
+console.log(newCountries)
+
+// map using an arrow function call back
+
+const countries = ['Germany', 'America', 'Russia', 'France']
+const newCountries = countries.map(country => country.toUpperCase())
+
+console.log(newCountries) 
+
+```
+
+As you can see that map is very handy to modify an array and to get an array back. Now, let us create an array of the length of the countries from the countries array.
+
+```js
+const countries = ['Germany', 'America', 'Russia', 'France']
+const countriesLength = countries.map(country => country.length)
+
+console.log(countriesLength) // [7, 7, 6, 6]
+```
+
+Let us see another more example
+
+```js
+const numbers = [1, 2, 3, 4, 5]
+const squares = numbers.map(n => n ** 2)
+
+console.log(squares) // [1, 4, 9, 16, 25]
+```
 
 
 
