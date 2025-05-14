@@ -71,7 +71,7 @@ console.log(sum) // 15
 Let us move to the next functional programming method which is going to be a map.
 
 
-## 2. map In JavaScript, a Map is a built-in object that stores key-value pairs, similar to a dictionary in other programming languages. However, unlike objects where keys are implicitly strings, Map allows keys of any data type, including objects and functions. Map objects maintain the insertion order of elements.
+## 🫡2. map() In JavaScript, a Map is a built-in object that stores key-value pairs, similar to a dictionary in other programming languages. However, unlike objects where keys are implicitly strings, Map allows keys of any data type, including objects and functions. Map objects maintain the insertion order of elements.
 
 We use the map method whenever we like to modify an array. We use the map method only with arrays and it always returns an array.
 
