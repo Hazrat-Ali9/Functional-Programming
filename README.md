@@ -133,4 +133,24 @@ console.log(squares) // [1, 4, 9, 16, 25]
 ```
 
 
+## Recursion:
 
+**Definition**:
+
+Recursion is a technique for iterating over an operation by having a function call itself repeatedly until it arrives at a result. Most loops can be rewritten in a recursive style, and in some functional languages this approach to looping is the default.
+
+**Code example**:
+
+JavaScript’s functional coding style does support recursive functions, we need to be aware that most **JavaScript compilers are not currently optimized to support them safely**.
+
+We can use **filter**, **map**, **reduce**, **foreach** high order functions to make recursion in JS.
+ 
+**Example 1:**
+```js
+const countdown = (value) => (value>0)?countdown(value-1):value;
+```
+
+**Example 2:**
+```js
+const factorial = (number) => (number<=0)?1:(number*factorial(number-1));
+```
